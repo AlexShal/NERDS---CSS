@@ -2,8 +2,14 @@ body {
     font-family:Roboto;
     margin: 0;
 }
+.header {
+    background-color: #edeeef;
+
+}
+
+}
 .container {
-    max-width: 1440px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 .nav{ 
@@ -11,6 +17,16 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
+}
+.nav__logo {
+    transition:opacity 200ms ease-in-out;
+}
+.nav__logo:focus,
+.nav__logo:hover {
+    opacity: 0.7;
+}
+.nav__logo:active {
+    opacity: 0.3;
 }
 .nav__links-list {
     display:flex;
@@ -20,10 +36,26 @@ body {
     list-style-type: none;
 }
 .nav__link {
+    padding: 10px 0; 
     color: black;
     text-decoration: none;
     text-transform: uppercase;
 }
-.nav-link-icon {
+.nav__link:hover {
+    color: red;
+}
+.nav__link:active {
+    color:#aaa;
+    
+}
+
+.nav__link--cart {
+    display: flex;
+
+}
+.nav__link.is-active {
+    border-bottom: 2px solid red; 
+}
+.nav__link-icon {
     margin-right:22px;
 }
