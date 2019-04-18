@@ -1,6 +1,13 @@
+/*Base styles*/
+*{
+    box-sizing: border-box;
+}
+
+
 body {
     font-family:Roboto;
     margin: 0;
+    
 }
 .header {
     background-color: #edeeef;
@@ -59,3 +66,5 @@ body {
 .nav__link-icon {
     margin-right:22px;
 }
+/*Hero*/
+.hero
